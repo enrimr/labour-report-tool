@@ -6,7 +6,9 @@ module.exports = {
   extends: ["plugin:vue/essential", "@vue/prettier"],
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off"
+    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
+    "no-var": 1,
+    "prefer-const": 1
   },
   parserOptions: {
     parser: "babel-eslint"
